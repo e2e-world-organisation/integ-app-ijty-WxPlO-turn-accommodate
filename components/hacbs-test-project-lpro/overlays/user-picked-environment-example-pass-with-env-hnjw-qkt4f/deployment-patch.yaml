@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-lpro
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/quay-or-not-to-quay/nbe-e2e-xdxh-tenant/integ-app-ijty/hacbs-test-project-lpro@sha256:d3f5f9a2df7560ed731942912b7b16fcb3708fe03ed734e2951984979c87f6be
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
